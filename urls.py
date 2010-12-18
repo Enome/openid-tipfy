@@ -3,6 +3,8 @@
 from tipfy import Rule
 
 rules = [
-    Rule('/', name='hello-world', handler='hello_world.handlers.HelloWorldHandler'),
-    Rule('/pretty', name='hello-world-pretty', handler='hello_world.handlers.PrettyHelloWorldHandler'),
+    Rule('/', name='home', handler='openid.handlers.HomeHandler'),
+    Rule('/login', name='auth/login', handler='openid.handlers.LoginHandler'),
+    Rule('/auth/openid', name='auth/openid', handler='openid.handlers.OpenIDHandler'),
+    Rule('/protected', name='protected', handler='openid.handlers.ProtectedHandler'),
 ]

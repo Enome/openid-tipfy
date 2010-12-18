@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+	<title>Tipfy - OpenID Example</title>
+	<style type="text/css">
+		body { font-family:"Helvetica Neue", Helvetica, Arial, sans-serif; }
+	</style>
+	{% block head %}{% endblock %}
+</head>
+<body>
+	<ul>
+		<li>
+			<a href='/'>Home</a>
+		</li>	
+		<li>
+			<a href='/protected'>Protected</a>
+		</li>	
+	</ul>
+	{% block content %}
+	{% endblock %}
+
+	<p><a href='https://github.com/Enome/openid-tipfy'>source code</a></p>
+</body>
+</html>
